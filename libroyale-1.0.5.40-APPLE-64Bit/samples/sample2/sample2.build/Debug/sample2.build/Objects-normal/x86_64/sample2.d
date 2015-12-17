@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/CameraManager.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Definitions.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/ICameraDevice.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Status.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/ICameraSettings.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/String.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Iterator.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IDepthDataListener.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/DepthData.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Vector.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Pair.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IExtendedDataListener.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IExtendedData.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/RawData.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IntermediateData.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/CameraCaptureMode.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/OperationMode.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/LensParameters.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/CameraType.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/ProcessingFlag.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/Variant.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IImageSensorLoggingListener.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IRecordStopListener.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/IExposureListener.hpp \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include/royale/ExposureMode.hpp

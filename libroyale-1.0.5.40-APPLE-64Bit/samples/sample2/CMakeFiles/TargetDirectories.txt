@@ -1,0 +1,3 @@
+/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeFiles/ZERO_CHECK.dir
+/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeFiles/ALL_BUILD.dir
+/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeFiles/sample2.dir

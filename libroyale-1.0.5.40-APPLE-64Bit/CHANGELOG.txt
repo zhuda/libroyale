@@ -1,0 +1,153 @@
+ChangeLog for Royale
+====================
+
+v1.0.5 - 2015-10-23
+-------------------
+
+Please see README file for supported hardware configurations.
+
+### SDK
+
+#### Features
+
+- Added exposure times and modulation frequencies to RawData structure
+- Add additional OperationModes for FPGA calibration
+- Exposure values for access Level 3 are ignoring min/max values
+- Adding iterator for royale Vector and String classes
+- Calibration data can now be set by the API user (requires Level 2)
+- Playback is now possible with different calibration information
+- Optimize data quality and transfer speed for supported camera devices
+
+#### Bugfixes
+
+- CalibrationManager loads wrong frequencies under certain conditions
+- Fix bug where Matlab crashed because of wrong flags pointer
+- Fix wrong wiggling values for PicoS
+- Fix wrong default values for EvalKit (depth values are now correct)
+- Minor fixes of HTML documentation
+- Illumination temperature was wrong in recording data
+- Sensor serial was wrong for FPGA cameras
+- Documentation added that several operations are not allowed to be performed in onNewData()
+- Improve stability while camera is getting unplugged under certain situations
+
+### Royale Viewer
+
+#### Features
+
+- Visualization of color coded depth map with amplitude information
+- Updated to Qt 5.5.1
+- Add geometric translation capabilities
+
+#### Bugfixes
+
+- OperationMode switches have not been stored correctly in recording data
+- Distance tooltip now updated correctly if mouse is not moving
+- Fix color range bug
+
+v1.0.0 - 2015-10-01
+-------------------
+
+### SDK
+
+#### Features
+
+- API is now free from STL containers (higher degree of compatibility)
+- Support for FPGA-based camera in raw data mode
+- New logo has been introduced
+- Flags are now exposed in IntermediateData
+- Different system frequencies are now supported
+
+#### Bugfixes
+
+- .NET wrapper now also wrapping access level 2 and 3
+- Update Android samples
+- Consistently return CameraStatus for callback registration
+- Fix bug with incorrect compiler flags for .NET wrapper
+- Fix incorrect serial number generation (please be aware that the serial number changed!)
+- IntermediateData now contains unnormalized amplitudes
+
+### Royale Viewer
+
+#### Features
+
+- Frustum can now be hidden
+- Add screen shot for 2D/3D visualization
+- Add distance measurement by mouse click/touch
+
+#### Bugfixes
+
+- Better alignment of 2D/3D view
+- Scale point sprites according to point distance
+- Keep image size ratio based on original image size
+
+
+v0.9.5 - 2015-09-04
+-------------------
+
+### Features
+
+- .NET wrapper for Windows
+- Matlab wrapper for Windows
+- Auto-exposure functionality
+- Improvements for processing chain
+- Add signed driver for Infineon's EvalKit
+- Enhanced DepthData structure (now containing exposure time)
+- Register as IExposureListener in order to get the current exposure values
+- Query current OperationMode
+- Improvements for royaleviewer (e.g. cleanup menus, auto-exposure, ...)
+
+### Bugfixes
+
+- Remove remaining installation directory after uninstalling libroyale
+- Proper handling for CameraManager::getConnectedCameraList()
+
+v0.9.0 - 2015-08-14
+-------------------
+
+### Features
+
+- Added additional data output for Level 2
+- Record/Playback functionality
+- FPS display
+- Various improvements in royaleviewer (possibility
+  to change the exposure time, colored 3D mode, ...)
+
+### Bugfixes
+
+- Added missing libusbandroid to Android package
+- Fixed some bugs concerning the layout and usability of the menus and buttons
+  in royaleviewer
+
+v0.8.5 - 2015-07-24
+-------------------
+
+### Features
+
+- Windows installer for Royale SDK
+- Mac OSX version
+- Improve processing chain
+- Processing chain is now linked statically
+- Introduces three different access levels for ICameraDevice replacine Pro/Expert mode
+  - L1 ... normal
+  - L2 ... requires activation code (for evaluation purposes)
+  - L3 ... requires activation code (internal only)
+- CameraFactor for custom module creation via API (L3)
+- CameraProperties exposed for custom module creation (L3)
+- Raw data listener (L2)
+- Get exposure time limits
+- Set processing parameters (L2)
+- Royale version can now be queried
+
+### Bugfixes
+
+- Fix bug where wrong image height was exposed in ICameraDevice
+- Fix bug where wrong lens parameters are exposed
+
+v0.8.0 - 2015-07-02
+-------------------
+
+### Features
+
+- First (beta) release of the Royale SDK
+- Supported cameras: CamBoard pico flexx
+- Supported platforms: Windows, Linux, Android

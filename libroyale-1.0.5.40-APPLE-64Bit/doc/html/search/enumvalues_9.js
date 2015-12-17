@@ -1,0 +1,11 @@
+var searchData=
+[
+  ['noisethreshold_5ffloat',['NoiseThreshold_Float',['../namespace_royale_dot_net.html#ab3fdff3ffcdd389ecf09923b128459c8acc5d0c0a13c203aa4f515d2a8f690b9a',1,'RoyaleDotNet.NoiseThreshold_Float()'],['../namespaceroyale.html#a7e10115488b46d46ac7703679b4e02c8acc5d0c0a13c203aa4f515d2a8f690b9a',1,'royale::NoiseThreshold_Float()']]],
+  ['none',['None',['../namespace_royale_dot_net.html#aefa4a38a0bc09826af9e30817a842120a6adf97f83acf6453d4a6a4b1070f3754',1,'RoyaleDotNet.None()'],['../namespaceroyale.html#a81008e7d512d2a5b1e90a40a50070344a6adf97f83acf6453d4a6a4b1070f3754',1,'royale::None()']]],
+  ['not_5fimplemented',['NOT_IMPLEMENTED',['../namespace_royale_dot_net.html#a7c470186ff8f9b10c7383e4fde017288a3e860a081575fc82cc7b6ed2ca602947',1,'RoyaleDotNet.NOT_IMPLEMENTED()'],['../namespaceroyale.html#a895d6f2339238d7f35b996906bd7d054a3e860a081575fc82cc7b6ed2ca602947',1,'royale::NOT_IMPLEMENTED()']]],
+  ['num_5fflags',['NUM_FLAGS',['../namespaceroyale.html#a7e10115488b46d46ac7703679b4e02c8a373be204df706aa83739caa20dca1cda',1,'royale']]],
+  ['num_5fimagertypes',['NUM_IMAGERTYPES',['../namespace_royale_dot_net.html#a8b7ad69359473357c417cd7c47395885a658f793c8c697a1e976a987fca678cbe',1,'RoyaleDotNet.NUM_IMAGERTYPES()'],['../namespaceroyale.html#a2ed2ec215cd5878886cca7cb054c9db0a658f793c8c697a1e976a987fca678cbe',1,'royale::NUM_IMAGERTYPES()']]],
+  ['num_5flogtypes',['NUM_LOGTYPES',['../namespace_royale_dot_net.html#a1fd5f2748bff3f877907caf9fc498c87aa316aa52e233295e662b04feab322a81',1,'RoyaleDotNet.NUM_LOGTYPES()'],['../namespaceroyale.html#ac015fe41532565ace97aa50e4a1db23daa316aa52e233295e662b04feab322a81',1,'royale::NUM_LOGTYPES()']]],
+  ['num_5fmodes',['NUM_MODES',['../namespace_royale_dot_net.html#a1002d0423f11c343b7eefd0cea698920a14c0cf4d663946795addcc2a6a7c029a',1,'RoyaleDotNet.NUM_MODES()'],['../namespaceroyale.html#a62eee70c1b4feff5e1332dfdd5e365b2a14c0cf4d663946795addcc2a6a7c029a',1,'royale::NUM_MODES()']]],
+  ['num_5ftemperaturesensors',['NUM_TEMPERATURESENSORS',['../namespace_royale_dot_net.html#ae899a6e23f0fe6b0d30350a78cb03cbaa45a9c01b2889a8e4cc0dad7b6ad12793',1,'RoyaleDotNet.NUM_TEMPERATURESENSORS()'],['../namespaceroyale.html#a6d706088b61e2c1fa73cd948cbcd7d69a45a9c01b2889a8e4cc0dad7b6ad12793',1,'royale::NUM_TEMPERATURESENSORS()']]]
+];
