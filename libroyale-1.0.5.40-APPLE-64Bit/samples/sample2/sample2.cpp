@@ -20,44 +20,46 @@ class MyListener : public IDepthDataListener
          * exposureTimes, while however the last one is fixed and purely provided for further
          * reference.
          */
-        auto sampleVector (data->exposureTimes);
-
-        if (sampleVector.size() > 0)
-        {
-            cout << "ExposureTimes #1: ";
-            for (unsigned int i = 0; i < sampleVector.size(); ++i)
-            {
-                cout << sampleVector.at (i);
-                if (i + 1 < sampleVector.size())
-                {
-                    cout << ", ";
-                }
-            }
-            cout << endl;
-        }
-      
+       
  
         pcl::PointCloud<pcl::PointXYZ> cloud;
         
         // Fill in the cloud data
-        cloud.width    = 5;
-        cloud.height   = 1;
+        cloud.width    = data->width;
+        cloud.height   = data->height;
         cloud.is_dense = false;
         cloud.points.resize (cloud.width * cloud.height);
         
-        for (size_t i = 0; i < cloud.points.size (); ++i)
+        for (size_t i = 0; i < data->points.size(); ++i)
         {
-            cloud.points[i].x = 1024 * rand () / (RAND_MAX + 1.0f);
-            cloud.points[i].y = 1024 * rand () / (RAND_MAX + 1.0f);
-            cloud.points[i].z = 1024 * rand () / (RAND_MAX + 1.0f);
+            cloud.points[i].x = data->points[i].x;
+            cloud.points[i].y = data->points[i].y;
+            cloud.points[i].z = data->points[i].z;
         }
         
-        pcl::io::savePCDFileASCII ("test_pcd.pcd", cloud);
+        // Make a unique name
+        auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+        struct tm *p;
+        p = localtime(&now);
+        p->tm_year = p->tm_year + 1900;
+        p->tm_mon = p->tm_mon + 1;
+        
+        char chTmp[15];
+        snprintf(chTmp,sizeof(chTmp),"%04d-%02d-%02d-%02d-%02d-%02d",
+                 p->tm_year, p->tm_mon, p->tm_mday, p->tm_hour, p->tm_min, p->tm_sec);
+        
+        std::string filename(chTmp);
+        filename += ".pcd";
+        
+        
+        auto begin = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+        pcl::io::savePCDFileASCII (filename, cloud);
+        auto end = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+        double time = difftime(end, begin);
+        std::cout << "saving using seconds: " << time << std::endl;
         std::cerr << "Saved " << cloud.points.size () << " data points to test_pcd.pcd." << std::endl;
         
-//        for (size_t i = 0; i < cloud.points.size (); ++i)
-//            std::cerr << "    " << cloud.points[i].x << " " << cloud.points[i].y << " " << cloud.po
-//  ints[i].z << std::endl;
+
 
 
         // make sure that you either process fast or copy the data
