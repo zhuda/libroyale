@@ -11,20 +11,20 @@
 #   For Windows also add: (where "MY_TARGET_NAME" is depending on your project)
 #
 #    add_custom_command(
-#       TARGET MY_TARGET_NAME 
+#       TARGET MY_TARGET_NAME
 #       POST_BUILD
 #       COMMAND ${CMAKE_COMMAND} -E copy "${royale_INSTALL_PATH}/bin/royale.dll"  $<TARGET_FILE_DIR:MY_TARGET_NAME>)
-#       
+#
 #
 #   For OS X also add: (where "MY_TARGET_NAME" is depending on your project)
 #
 #   add_custom_command(
-#       TARGET MY_TARGET_NAME 
+#       TARGET MY_TARGET_NAME
 #       POST_BUILD
 #       COMMAND ${CMAKE_COMMAND} -E copy "${royale_INSTALL_PATH}/bin/libroyale.dylib"  $<TARGET_FILE_DIR:MY_TARGET_NAME>)
-#       
+#
 #   add_custom_command(
-#       TARGET MY_TARGET_NAME 
+#       TARGET MY_TARGET_NAME
 #       POST_BUILD
 #       COMMAND ${CMAKE_COMMAND} -E copy "${royale_INSTALL_PATH}/bin/libroyale.${royale_VERSION}.dylib"  $<TARGET_FILE_DIR:MY_TARGET_NAME>)
 #

@@ -9,9 +9,9 @@
 /* Begin PBXAggregateTarget section */
 		000FDFA1220E425F974180DA /* ZERO_CHECK */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 16803579E66F4364895A01B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildConfigurationList = 3C53CD36D32A42378A354364 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
 			buildPhases = (
-				080EE324504D4144B2869405 /* CMake Rules */,
+				EE728694DBFC4882BA755F67 /* CMake Rules */,
 			);
 			dependencies = (
 			);
@@ -20,13 +20,13 @@
 		};
 		9802D00A44B341859888F6E4 /* ALL_BUILD */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 108CF29FB187404D8AB9E16E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildConfigurationList = 6B0C33286BCB49A2BB71F332 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
 			buildPhases = (
-				5BB8EB959C18425382632665 /* CMake Rules */,
+				A407B0AF9D834A849996F697 /* CMake Rules */,
 			);
 			dependencies = (
-				7A15C814236348A0B6A611B9 /* PBXTargetDependency */,
-				C0F29824F2FC4AAD83FF6594 /* PBXTargetDependency */,
+				63D029FDF5FD43B1AE60E0A5 /* PBXTargetDependency */,
+				B2C656547FF44FE8A3FB81FE /* PBXTargetDependency */,
 			);
 			name = ALL_BUILD;
 			productName = ALL_BUILD;
@@ -34,158 +34,158 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4B92EE1DFD684FC5AAA85497 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 427F439A758740D0BA5BABCF /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
-		B32767057A5249BF8ED9270E /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */ = {isa = PBXBuildFile; fileRef = 2C85545D05CE44B2A3504C09 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A948B68856174E1AA6A7ECED /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 6095DBD9A07E4890BBC4C1F0 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */; settings = {COMPILER_FLAGS = ""; }; };
+		AC12E6D7067D425E9A7B8910 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */ = {isa = PBXBuildFile; fileRef = ABB37D9DC30D4A6B80EB1AE7 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */; settings = {COMPILER_FLAGS = ""; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildStyle section */
-		931B0CC896484E1CA3A1D398 /* MinSizeRel */ = {
+		3CC9361501F9453C86EEADB0 /* MinSizeRel */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = MinSizeRel;
 		};
-		940679676E554E8682DD19C9 /* RelWithDebInfo */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = RelWithDebInfo;
-		};
-		A7D5368ECA414F7C8A8DCB81 = {
+		6C4E8E244EAD4E90B546CCAD = {
 			isa = PBXBuildStyle;
 		};
-		C157FFD3633A4EC0A7193EEA /* Debug */ = {
-			isa = PBXBuildStyle;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-			};
-			name = Debug;
-		};
-		EDCBC3CC5D5E4D3F9E346DC9 /* Release */ = {
+		7693E0C799CE4F06B0129B3A /* Release */ = {
 			isa = PBXBuildStyle;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 			};
 			name = Release;
 		};
+		7824A21A341445428E770983 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A2A9E4FB68814824834420E7 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
 /* End PBXBuildStyle section */
 
 /* Begin PBXContainerItemProxy section */
-		40C9B11085D24E0CBC3EAE96 /* PBXContainerItemProxy */ = {
+		896DCC09684E48F6A299AAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F0574F7D524E89BDCDC08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000FDFA1220E425F974180DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		C137C3BB1AD24761AE6F6EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F0574F7D524E89BDCDC08B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000FDFA1220E425F974180DA;
+			remoteInfo = ZERO_CHECK;
+		};
+		E736110AEC204B4288869403 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 00F0574F7D524E89BDCDC08B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C99EC1A647A24D0793042C46;
 			remoteInfo = sample2;
 		};
-		483D30563A544B2E9325F048 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00F0574F7D524E89BDCDC08B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 000FDFA1220E425F974180DA;
-			remoteInfo = ZERO_CHECK;
-		};
-		CBCF8384DBC64B62B4B21612 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 00F0574F7D524E89BDCDC08B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 000FDFA1220E425F974180DA;
-			remoteInfo = ZERO_CHECK;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2C85545D05CE44B2A3504C09 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample2.cpp; path = sample2.cpp; sourceTree = SOURCE_ROOT; };
-		427F439A758740D0BA5BABCF /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		4B8529B2E1774C1186465ED3 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
-		D48E3D2003DA44F0A0DAAC3A /* sample2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = sample2; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD30643E86584CA7B5108ABB /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6095DBD9A07E4890BBC4C1F0 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		799C3D25BAA24782BD65863A /* sample2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = sample2; refType = 0; sourceTree = BUILT_PRODUCTS_DIR; };
+		806487731D944762A667F91D /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		89C2DBCBFC09439B893043B5 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		ABB37D9DC30D4A6B80EB1AE7 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sample2.cpp; path = sample2.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		1693EDD8FC634836989AF1F9 /* Products */ = {
+		1D0DC4CD40234E50B583BD15 /* ZERO_CHECK */ = {
 			isa = PBXGroup;
 			children = (
-				D48E3D2003DA44F0A0DAAC3A /* sample2 */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		4476C92FF5904AB89B522574 /* Source Files */ = {
-			isa = PBXGroup;
-			children = (
-				2C85545D05CE44B2A3504C09 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */,
-			);
-			name = "Source Files";
-			sourceTree = "<group>";
-		};
-		5C333393756140C6BCB4732C /* sample2 */ = {
-			isa = PBXGroup;
-			children = (
-				4476C92FF5904AB89B522574 /* Source Files */,
-				427F439A758740D0BA5BABCF /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
-			);
-			name = sample2;
-			sourceTree = "<group>";
-		};
-		81CC4DB1AE4E443B99DDE200 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				94F74A0F8C164D199561666D /* ZERO_CHECK */,
-				B6383AD1449C45A491DA1139 /* ALL_BUILD */,
-				5C333393756140C6BCB4732C /* sample2 */,
-			);
-			name = Sources;
-			sourceTree = "<group>";
-		};
-		94F74A0F8C164D199561666D /* ZERO_CHECK */ = {
-			isa = PBXGroup;
-			children = (
-				CD642D3F62CC4BFB93CD5D69 /* CMake Rules */,
-				DD30643E86584CA7B5108ABB /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
+				ACF5A49BC3EF4C2996FC5A2E /* CMake Rules */,
+				806487731D944762A667F91D /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
 			);
 			name = ZERO_CHECK;
 			sourceTree = "<group>";
 		};
-		A03FAE879F1A4BA9BACF26B8 /* CMake Rules */ = {
+		32AE4A80ED994606A3B99F44 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				41D13805015947DC8F055986 /* CMake Rules */,
+				89C2DBCBFC09439B893043B5 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		41D13805015947DC8F055986 /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
 			sourceTree = "<group>";
 		};
-		AF66EF0406284A00B4260A27 /* Resources */ = {
+		686FC9F39CB04F81AC5A2B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				799C3D25BAA24782BD65863A /* sample2 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E6040A1AFDE4CF8B71620D2 /* sample2 */ = {
+			isa = PBXGroup;
+			children = (
+				B6FC94571FB6490CB6DFAB85 /* Source Files */,
+				6095DBD9A07E4890BBC4C1F0 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
+			);
+			name = sample2;
+			sourceTree = "<group>";
+		};
+		88381B6EE4D74D8FBEBBF151 = {
+			isa = PBXGroup;
+			children = (
+				F1F9B674655C4B5D80EDB191 /* Sources */,
+				A31122EE7D9643FA889ABBB0 /* Resources */,
+				686FC9F39CB04F81AC5A2B85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A31122EE7D9643FA889ABBB0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		B6383AD1449C45A491DA1139 /* ALL_BUILD */ = {
-			isa = PBXGroup;
-			children = (
-				A03FAE879F1A4BA9BACF26B8 /* CMake Rules */,
-				4B8529B2E1774C1186465ED3 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeLists.txt */,
-			);
-			name = ALL_BUILD;
-			sourceTree = "<group>";
-		};
-		C18CFC5912694224979D5F4D = {
-			isa = PBXGroup;
-			children = (
-				81CC4DB1AE4E443B99DDE200 /* Sources */,
-				AF66EF0406284A00B4260A27 /* Resources */,
-				1693EDD8FC634836989AF1F9 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		CD642D3F62CC4BFB93CD5D69 /* CMake Rules */ = {
+		ACF5A49BC3EF4C2996FC5A2E /* CMake Rules */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B6FC94571FB6490CB6DFAB85 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABB37D9DC30D4A6B80EB1AE7 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		F1F9B674655C4B5D80EDB191 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1D0DC4CD40234E50B583BD15 /* ZERO_CHECK */,
+				32AE4A80ED994606A3B99F44 /* ALL_BUILD */,
+				6E6040A1AFDE4CF8B71620D2 /* sample2 */,
+			);
+			name = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +193,19 @@
 /* Begin PBXNativeTarget section */
 		C99EC1A647A24D0793042C46 /* sample2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1DC9FAEA6DE4A40ACC829F9 /* Build configuration list for PBXNativeTarget "sample2" */;
+			buildConfigurationList = 2B3BF65EA17B408EB7369281 /* Build configuration list for PBXNativeTarget "sample2" */;
 			buildPhases = (
-				D86E5F1F51784ADABACC196F /* Sources */,
-				4B3D0B134B5A416AAD81DF75 /* CMake PostBuild Rules */,
+				B987DFA596A14FE297355B01 /* Sources */,
+				711BF12D35214CA391ED48BF /* CMake PostBuild Rules */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0BAA452422664850B36A3844 /* PBXTargetDependency */,
+				EE370B102C00463E9CA4C922 /* PBXTargetDependency */,
 			);
 			name = sample2;
 			productName = sample2;
-			productReference = D48E3D2003DA44F0A0DAAC3A /* sample2 */;
+			productReference = 799C3D25BAA24782BD65863A /* sample2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -216,18 +216,18 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 			};
-			buildConfigurationList = DC5CFF93D3D34C34AF2748C1 /* Build configuration list for PBXProject "sample2" */;
+			buildConfigurationList = 813EE885CF6E437284D02C9A /* Build configuration list for PBXProject "sample2" */;
 			buildSettings = {
 			};
 			buildStyles = (
-				C157FFD3633A4EC0A7193EEA /* Debug */,
-				EDCBC3CC5D5E4D3F9E346DC9 /* Release */,
-				931B0CC896484E1CA3A1D398 /* MinSizeRel */,
-				940679676E554E8682DD19C9 /* RelWithDebInfo */,
+				7824A21A341445428E770983 /* Debug */,
+				7693E0C799CE4F06B0129B3A /* Release */,
+				3CC9361501F9453C86EEADB0 /* MinSizeRel */,
+				A2A9E4FB68814824834420E7 /* RelWithDebInfo */,
 			);
 			compatibilityVersion = "Xcode 3.2";
 			hasScannedForEncodings = 0;
-			mainGroup = C18CFC5912694224979D5F4D;
+			mainGroup = 88381B6EE4D74D8FBEBBF151;
 			projectDirPath = .;
 			projectRoot = "";
 			targets = (
@@ -239,18 +239,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		080EE324504D4144B2869405 /* CMake Rules */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "CMake Rules";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "make -C /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2 -f /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
-			showEnvVarsInLog = 0;
-		};
-		4B3D0B134B5A416AAD81DF75 /* CMake PostBuild Rules */ = {
+		711BF12D35214CA391ED48BF /* CMake PostBuild Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,7 +250,22 @@
 			shellScript = "make -C /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2 -f /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeScripts/sample2_postBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		5BB8EB959C18425382632665 /* CMake Rules */ = {
+		87D69AE72CD145B0A454F722 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A407B0AF9D834A849996F697 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,7 +276,7 @@
 			shellScript = "make -C /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2 -f /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeScripts/ALL_BUILD_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
-		8DC5CBAF5A064D7286DCB2B8 = {
+		BCFE63544F1F4BD5A6AC9EC6 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -287,247 +291,50 @@
 exit 0";
 			showEnvVarsInLog = 0;
 		};
-		D44AAABC946D4761B02CDE2F = {
+		EE728694DBFC4882BA755F67 /* CMake Rules */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
+			name = "CMake Rules";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# shell script goes here
-exit 0";
+			shellScript = "make -C /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2 -f /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/CMakeScripts/ZERO_CHECK_cmakeRulesBuildPhase.make$CONFIGURATION all";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D86E5F1F51784ADABACC196F /* Sources */ = {
+		B987DFA596A14FE297355B01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B32767057A5249BF8ED9270E /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */,
+				AC12E6D7067D425E9A7B8910 /* /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.cpp */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0BAA452422664850B36A3844 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 000FDFA1220E425F974180DA /* ZERO_CHECK */;
-			targetProxy = CBCF8384DBC64B62B4B21612 /* PBXContainerItemProxy */;
-		};
-		7A15C814236348A0B6A611B9 /* PBXTargetDependency */ = {
+		63D029FDF5FD43B1AE60E0A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C99EC1A647A24D0793042C46 /* sample2 */;
-			targetProxy = 40C9B11085D24E0CBC3EAE96 /* PBXContainerItemProxy */;
+			targetProxy = E736110AEC204B4288869403 /* PBXContainerItemProxy */;
 		};
-		C0F29824F2FC4AAD83FF6594 /* PBXTargetDependency */ = {
+		B2C656547FF44FE8A3FB81FE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 000FDFA1220E425F974180DA /* ZERO_CHECK */;
-			targetProxy = 483D30563A544B2E9325F048 /* PBXContainerItemProxy */;
+			targetProxy = C137C3BB1AD24761AE6F6EE5 /* PBXContainerItemProxy */;
+		};
+		EE370B102C00463E9CA4C922 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000FDFA1220E425F974180DA /* ZERO_CHECK */;
+			targetProxy = 896DCC09684E48F6A299AAD3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0ABC9069EE2B4C8E8CE730AC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Debug;
-		};
-		10D2DADF653748F7AD8EF2B7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Release;
-		};
-		133CEF711B20458F8B5CBA85 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		1FB5CA93FE094DC695BE184B /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ZERO_CHECK;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		288181DC0DE744F297AA74FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 3;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				LIBRARY_SEARCH_PATHS = " /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = sample2;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Release;
-		};
-		2961B82E31A94961BA057573 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = Release;
-		};
-		2DF18F34744240BAA0AE675E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
-			};
-			name = Release;
-		};
-		42876BF839FE4F96B7270811 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
-			};
-			name = Debug;
-		};
-		6764AB873E7D4C968388C2F4 /* MinSizeRel */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = MinSizeRel;
-		};
-		903E8CD891E5412E990BC67D /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				OTHER_LDFLAGS = " ";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = ALL_BUILD;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		91A9A606BFAB4DD19C71488B /* MinSizeRel */ = {
+		35A106322487481EAC27BEFB /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -536,14 +343,14 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", DISABLE_OPENNI2, DISABLE_ENSENSO, DISABLE_DAVIDSDK, DISABLE_DSSDK, DISABLE_PCAP, DISABLE_PNG, DISABLE_LIBUSB_1_0, DISABLE_RSSDK, EIGEN_USE_NEW_STDVECTOR, EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET, FLANN_STATIC, qh_QHpointer, );
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				LIBRARY_SEARCH_PATHS = " /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     -DNDEBUG  ";
+				OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/lib/libOpenNI.dylib /usr/local/lib/libpcl_io.dylib /opt/local/lib/libflann_cpp_s.a /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /opt/local/lib/libqhull_p.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /opt/local/lib/libqhull_p.dylib /usr/lib/libOpenNI.dylib /opt/local/lib/libflann_cpp_s.a /opt/local/lib/vtk-5.10/libvtkGenericFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGeovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/local/lib/libpcl_io.dylib /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtksys.5.10.1.dylib -lobjc -lm /opt/local/libexec/qt4/lib/libQtGui.dylib /opt/local/libexec/qt4/lib/libQtSql.dylib /opt/local/libexec/qt4/lib/libQtCore.dylib";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = sample2;
 				SECTORDER_FLAGS = "";
@@ -553,7 +360,33 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
-		9A8C9FF01E0F42CD9509D31A /* Debug */ = {
+		4D38D900FD4A4D48B8B750D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", DISABLE_OPENNI2, DISABLE_ENSENSO, DISABLE_DAVIDSDK, DISABLE_DSSDK, DISABLE_PCAP, DISABLE_PNG, DISABLE_LIBUSB_1_0, DISABLE_RSSDK, EIGEN_USE_NEW_STDVECTOR, EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET, FLANN_STATIC, qh_QHpointer, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     -DNDEBUG  ";
+				OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/lib/libOpenNI.dylib /usr/local/lib/libpcl_io.dylib /opt/local/lib/libflann_cpp_s.a /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /opt/local/lib/libqhull_p.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /opt/local/lib/libqhull_p.dylib /usr/lib/libOpenNI.dylib /opt/local/lib/libflann_cpp_s.a /opt/local/lib/vtk-5.10/libvtkGenericFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGeovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/local/lib/libpcl_io.dylib /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtksys.5.10.1.dylib -lobjc -lm /opt/local/libexec/qt4/lib/libQtGui.dylib /opt/local/libexec/qt4/lib/libQtSql.dylib /opt/local/libexec/qt4/lib/libQtCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sample2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		525EEBF0E8B34EDA9F5022D1 /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -562,7 +395,49 @@ exit 0";
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		56B6797C401641D593E8FBC4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = MinSizeRel;
+		};
+		667EC2F015DA41378D568164 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
 				INSTALL_PATH = "";
 				OTHER_LDFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -574,7 +449,38 @@ exit 0";
 			};
 			name = Debug;
 		};
-		9ED5A57496E744E3ACE6E25F /* Debug */ = {
+		7C19FFDF2CFE4E42A08659CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
+			};
+			name = Release;
+		};
+		8474F583A8664E81BEAB7EFE /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		93BA2BC3408B4BC9BFAC45CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
@@ -583,14 +489,14 @@ exit 0";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", DISABLE_OPENNI2, DISABLE_ENSENSO, DISABLE_DAVIDSDK, DISABLE_DSSDK, DISABLE_PCAP, DISABLE_PNG, DISABLE_LIBUSB_1_0, DISABLE_RSSDK, EIGEN_USE_NEW_STDVECTOR, EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET, FLANN_STATIC, qh_QHpointer, );
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
 				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				LIBRARY_SEARCH_PATHS = " /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11     ";
+				OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/lib/libOpenNI.dylib /usr/local/lib/libpcl_io.dylib /opt/local/lib/libflann_cpp_s.a /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /opt/local/lib/libqhull_p.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /opt/local/lib/libqhull_p.dylib /usr/lib/libOpenNI.dylib /opt/local/lib/libflann_cpp_s.a /opt/local/lib/vtk-5.10/libvtkGenericFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGeovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/local/lib/libpcl_io.dylib /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtksys.5.10.1.dylib -lobjc -lm /opt/local/libexec/qt4/lib/libQtGui.dylib /opt/local/libexec/qt4/lib/libQtSql.dylib /opt/local/libexec/qt4/lib/libQtCore.dylib";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = sample2;
 				SECTORDER_FLAGS = "";
@@ -600,43 +506,7 @@ exit 0";
 			};
 			name = Debug;
 		};
-		A9620D090A634627B74A1E23 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
-			};
-			name = RelWithDebInfo;
-		};
-		C108056DC638447A800C47D8 /* RelWithDebInfo */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				EXECUTABLE_SUFFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
-				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
-				GCC_OPTIMIZATION_LEVEL = 2;
-				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				HEADER_SEARCH_PATHS = ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", );
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				LIBRARY_SEARCH_PATHS = " /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
-				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11        -DNDEBUG  ";
-				OTHER_LDFLAGS = " -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale";
-				OTHER_REZFLAGS = "";
-				PRODUCT_NAME = sample2;
-				SECTORDER_FLAGS = "";
-				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
-				USE_HEADERMAP = NO;
-				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
-			};
-			name = RelWithDebInfo;
-		};
-		EBE385ED53EB45BBB445509F /* MinSizeRel */ = {
+		B588F6C78713467FBA3E70EB /* MinSizeRel */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -646,49 +516,179 @@ exit 0";
 			};
 			name = MinSizeRel;
 		};
+		B93092F3DA1549DF8F4A49B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
+		CD2E3441DE9B42D397BC8548 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", DISABLE_OPENNI2, DISABLE_ENSENSO, DISABLE_DAVIDSDK, DISABLE_DSSDK, DISABLE_PCAP, DISABLE_PNG, DISABLE_LIBUSB_1_0, DISABLE_RSSDK, EIGEN_USE_NEW_STDVECTOR, EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET, FLANN_STATIC, qh_QHpointer, );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = "/usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				LIBRARY_SEARCH_PATHS = " /usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /usr/local/lib /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME) /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/bin";
+				OTHER_CPLUSPLUSFLAGS = " -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11 -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11  -Wno-deprecated -Wall -Wsign-compare -Wuninitialized -Wunused -Wno-deprecated-declarations -std=c++11        -DNDEBUG  ";
+				OTHER_LDFLAGS = "  -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -lroyale /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/lib/libOpenNI.dylib /usr/local/lib/libpcl_io.dylib /opt/local/lib/libflann_cpp_s.a /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /opt/local/lib/libqhull_p.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/libboost_system-mt.dylib /opt/local/lib/libboost_filesystem-mt.dylib /opt/local/lib/libboost_thread-mt.dylib /opt/local/lib/libboost_date_time-mt.dylib /opt/local/lib/libboost_iostreams-mt.dylib /opt/local/lib/libboost_serialization-mt.dylib /opt/local/lib/libqhull_p.dylib /usr/lib/libOpenNI.dylib /opt/local/lib/libflann_cpp_s.a /opt/local/lib/vtk-5.10/libvtkGenericFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGeovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCharts.5.10.1.dylib /usr/local/lib/libpcl_common.dylib /usr/local/lib/libpcl_octree.dylib /usr/local/lib/libpcl_io.dylib /usr/local/lib/libpcl_kdtree.dylib /usr/local/lib/libpcl_search.dylib /usr/local/lib/libpcl_sample_consensus.dylib /usr/local/lib/libpcl_filters.dylib /usr/local/lib/libpcl_features.dylib /usr/local/lib/libpcl_ml.dylib /usr/local/lib/libpcl_segmentation.dylib /usr/local/lib/libpcl_visualization.dylib /usr/local/lib/libpcl_surface.dylib /usr/local/lib/libpcl_registration.dylib /usr/local/lib/libpcl_keypoints.dylib /usr/local/lib/libpcl_tracking.dylib /usr/local/lib/libpcl_recognition.dylib /usr/local/lib/libpcl_stereo.dylib /usr/local/lib/libpcl_outofcore.dylib /usr/local/lib/libpcl_people.dylib /opt/local/lib/vtk-5.10/libvtkViews.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkInfovis.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkWidgets.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkVolumeRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkHybrid.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkRendering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkImaging.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkGraphics.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkIO.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkFiltering.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtkCommon.5.10.1.dylib /opt/local/lib/vtk-5.10/libvtksys.5.10.1.dylib -lobjc -lm /opt/local/libexec/qt4/lib/libQtGui.dylib /opt/local/libexec/qt4/lib/libQtSql.dylib /opt/local/libexec/qt4/lib/libQtCore.dylib";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = sample2;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		D55562C4E9DC4750A9F64046 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = RelWithDebInfo;
+		};
+		DA4320D6C125405B8A111DF4 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
+			};
+			name = RelWithDebInfo;
+		};
+		DAA1D182DD174E038717AC44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Debug;
+		};
+		EED31659E57B4DCEAC3225C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk;
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/build";
+			};
+			name = Debug;
+		};
+		F7FBE7A5608543379AD554A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'", );
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/opt/local/include/vtk-5.10", "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/include", "/usr/local/include/pcl-1.8", /opt/local/include/eigen3, /opt/local/include, /usr/include/ni, );
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("-Wmost", "-Wno-four-char-constants", "-Wno-unknown-pragmas", "$(inherited)", );
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		108CF29FB187404D8AB9E16E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+		2B3BF65EA17B408EB7369281 /* Build configuration list for PBXNativeTarget "sample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0ABC9069EE2B4C8E8CE730AC /* Debug */,
-				2961B82E31A94961BA057573 /* Release */,
-				6764AB873E7D4C968388C2F4 /* MinSizeRel */,
-				903E8CD891E5412E990BC67D /* RelWithDebInfo */,
+				93BA2BC3408B4BC9BFAC45CD /* Debug */,
+				4D38D900FD4A4D48B8B750D0 /* Release */,
+				35A106322487481EAC27BEFB /* MinSizeRel */,
+				CD2E3441DE9B42D397BC8548 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		16803579E66F4364895A01B1 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+		3C53CD36D32A42378A354364 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9A8C9FF01E0F42CD9509D31A /* Debug */,
-				10D2DADF653748F7AD8EF2B7 /* Release */,
-				133CEF711B20458F8B5CBA85 /* MinSizeRel */,
-				1FB5CA93FE094DC695BE184B /* RelWithDebInfo */,
+				667EC2F015DA41378D568164 /* Debug */,
+				F7FBE7A5608543379AD554A0 /* Release */,
+				525EEBF0E8B34EDA9F5022D1 /* MinSizeRel */,
+				8474F583A8664E81BEAB7EFE /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		C1DC9FAEA6DE4A40ACC829F9 /* Build configuration list for PBXNativeTarget "sample2" */ = {
+		6B0C33286BCB49A2BB71F332 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9ED5A57496E744E3ACE6E25F /* Debug */,
-				288181DC0DE744F297AA74FD /* Release */,
-				91A9A606BFAB4DD19C71488B /* MinSizeRel */,
-				C108056DC638447A800C47D8 /* RelWithDebInfo */,
+				DAA1D182DD174E038717AC44 /* Debug */,
+				B93092F3DA1549DF8F4A49B9 /* Release */,
+				56B6797C401641D593E8FBC4 /* MinSizeRel */,
+				D55562C4E9DC4750A9F64046 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		DC5CFF93D3D34C34AF2748C1 /* Build configuration list for PBXProject "sample2" */ = {
+		813EE885CF6E437284D02C9A /* Build configuration list for PBXProject "sample2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				42876BF839FE4F96B7270811 /* Debug */,
-				2DF18F34744240BAA0AE675E /* Release */,
-				EBE385ED53EB45BBB445509F /* MinSizeRel */,
-				A9620D090A634627B74A1E23 /* RelWithDebInfo */,
+				EED31659E57B4DCEAC3225C7 /* Debug */,
+				7C19FFDF2CFE4E42A08659CF /* Release */,
+				B588F6C78713467FBA3E70EB /* MinSizeRel */,
+				DA4320D6C125405B8A111DF4 /* RelWithDebInfo */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

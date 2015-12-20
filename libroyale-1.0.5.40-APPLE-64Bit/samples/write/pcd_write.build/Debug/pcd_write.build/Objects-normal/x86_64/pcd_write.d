@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/write/pcd_write.cpp \
+  /usr/local/include/pcl-1.8/pcl/io/pcd_io.h \
+  /usr/local/include/pcl-1.8/pcl/point_cloud.h \
+  /usr/local/include/pcl-1.8/pcl/io/file_io.h \
+  /usr/local/include/pcl-1.8/pcl/common/io.h \
+  /usr/local/include/pcl-1.8/pcl/pcl_base.h \
+  /usr/local/include/pcl-1.8/pcl/conversions.h \
+  /usr/local/include/pcl-1.8/pcl/common/impl/io.hpp \
+  /usr/local/include/pcl-1.8/pcl/common/concatenate.h \
+  /usr/local/include/pcl-1.8/pcl/common/copy_point.h \
+  /usr/local/include/pcl-1.8/pcl/common/impl/copy_point.hpp \
+  /usr/local/include/pcl-1.8/pcl/point_types.h \
+  /usr/local/include/pcl-1.8/pcl/register_point_struct.h \
+  /usr/local/include/pcl-1.8/pcl/io/boost.h \
+  /usr/local/include/pcl-1.8/pcl/PolygonMesh.h \
+  /usr/local/include/pcl-1.8/pcl/Vertices.h \
+  /usr/local/include/pcl-1.8/pcl/TextureMesh.h \
+  /usr/local/include/pcl-1.8/pcl/io/impl/pcd_io.hpp \
+  /usr/local/include/pcl-1.8/pcl/io/lzf.h
