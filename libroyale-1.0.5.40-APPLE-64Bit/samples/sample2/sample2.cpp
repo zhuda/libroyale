@@ -56,9 +56,9 @@ class MyListener : public IDepthDataListener
         pcl::io::savePCDFileASCII (filename, cloud);
         auto end = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
         double time = difftime(end, begin);
+
+        std::cerr << "Saved " << cloud.points.size () << " data points." << std::endl;
         std::cout << "saving using seconds: " << time << std::endl;
-        std::cerr << "Saved " << cloud.points.size () << " data points to test_pcd.pcd." << std::endl;
-        
 
 
 
