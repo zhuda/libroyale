@@ -38,27 +38,37 @@ class MyListener : public IDepthDataListener
         }
         
         // Make a unique name
+        /*
         auto now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
         struct tm *p;
         p = localtime(&now);
         p->tm_year = p->tm_year + 1900;
         p->tm_mon = p->tm_mon + 1;
         
-        char chTmp[15];
+        char chTmp[100];
         snprintf(chTmp,sizeof(chTmp),"%04d-%02d-%02d-%02d-%02d-%02d",
                  p->tm_year, p->tm_mon, p->tm_mday, p->tm_hour, p->tm_min, p->tm_sec);
         
         std::string filename(chTmp);
+        filename.shrink_to_fit();
         filename += ".pcd";
+        */
+        static int index = 0;
+        index ++;
+        stringstream s;
+        s << index;
+        std::string filename = s.str() + ".pcd";
         
-        
-        auto begin = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+        typedef std::chrono::high_resolution_clock Clock;
+        typedef std::chrono::milliseconds milliseconds;
+        Clock::time_point t0 = Clock::now();
         pcl::io::savePCDFileASCII (filename, cloud);
-        auto end = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
-        double time = difftime(end, begin);
+        Clock::time_point t1 = Clock::now();
+        milliseconds ms = std::chrono::duration_cast<milliseconds>(t1 - t0);
+    
 
         std::cerr << "Saved " << cloud.points.size () << " data points." << std::endl;
-        std::cout << "saving using seconds: " << time << std::endl;
+        std::cout << "saving using : " << ms.count() << " ms" << std::endl;
 
 
 
@@ -114,23 +124,10 @@ int main()
     cameraDevice->registerDataListener (&listener);
 
     // set an operation mode
-    cameraDevice->setOperationMode (cameraDevice->getOperationModes() [0]);
+    cameraDevice->setOperationMode (royale::OperationMode::MODE_9_15FPS_700);
 
     // start capture mode
     cameraDevice->startCapture();
-
-    // retrieve current operation mode;
-    cout << "New operationMode: " << royale::getOperationModeName (cameraDevice->getOperationMode()).c_str() << endl;
-
-    // let the camera capture for some time
-    std::this_thread::sleep_for (std::chrono::seconds (30));
-
-    // change the exposure time (limited by the used operation mode [microseconds]
-    if (cameraDevice->setExposureTime (200) != CameraStatus::SUCCESS)
-    {
-        cerr << "Cannot set exposure time" << endl;
-    }
-    cout << "Changed exposure time to 200 microseconds ..." << endl;
 
     // let the camera capture for some time
     std::this_thread::sleep_for (std::chrono::seconds (30));
