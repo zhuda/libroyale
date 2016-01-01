@@ -47,6 +47,7 @@
 
 #include <pcl/filters/voxel_grid.h>
 #include <pcl/filters/filter.h>
+#include <pcl/filters/statistical_outlier_removal.h>
 
 #include <pcl/features/normal_3d.h>
 
@@ -55,6 +56,7 @@
 #include <pcl/registration/transforms.h>
 
 #include <pcl/visualization/pcl_visualizer.h>
+
 
 using pcl::visualization::PointCloudColorHandlerGenericField;
 using pcl::visualization::PointCloudColorHandlerCustom;
@@ -67,10 +69,10 @@ typedef pcl::PointCloud<PointNormalT> PointCloudWithNormals;
 
 // This is a tutorial so we can afford having global variables
 //our visualizer
-pcl::visualization::PCLVisualizer *p;
-
-//its left and right viewports
-int vp_1, vp_2;
+//pcl::visualization::PCLVisualizer *p;
+//
+////its left and right viewports
+//int vp_1, vp_2;
 
 //convenient structure to handle our pointclouds
 struct PCD
@@ -117,45 +119,45 @@ public:
 /** \brief Display source and target on the first viewport of the visualizer
  *
  */
-void showCloudsLeft(const PointCloud::Ptr cloud_target, const PointCloud::Ptr cloud_source)
-{
-    p->removePointCloud ("vp1_target");
-    p->removePointCloud ("vp1_source");
-    
-    PointCloudColorHandlerCustom<PointT> tgt_h (cloud_target, 0, 255, 0);
-    PointCloudColorHandlerCustom<PointT> src_h (cloud_source, 255, 0, 0);
-    p->addPointCloud (cloud_target, tgt_h, "vp1_target", vp_1);
-    p->addPointCloud (cloud_source, src_h, "vp1_source", vp_1);
-    
-    //PCL_INFO ("Press q to begin the registration.\n");
-    p-> spinOnce(2000, true);
-}
+//void showCloudsLeft(const PointCloud::Ptr cloud_target, const PointCloud::Ptr cloud_source)
+//{
+//    p->removePointCloud ("vp1_target");
+//    p->removePointCloud ("vp1_source");
+//    
+//    PointCloudColorHandlerCustom<PointT> tgt_h (cloud_target, 0, 255, 0);
+//    PointCloudColorHandlerCustom<PointT> src_h (cloud_source, 255, 0, 0);
+//    p->addPointCloud (cloud_target, tgt_h, "vp1_target", vp_1);
+//    p->addPointCloud (cloud_source, src_h, "vp1_source", vp_1);
+//    
+//    //PCL_INFO ("Press q to begin the registration.\n");
+//    p-> spinOnce(2000, true);
+//}
 
 
 ////////////////////////////////////////////////////////////////////////////////
 /** \brief Display source and target on the second viewport of the visualizer
  *
  */
-void showCloudsRight(const PointCloudWithNormals::Ptr cloud_target, const PointCloudWithNormals::Ptr cloud_source)
-{
-    p->removePointCloud ("source");
-    p->removePointCloud ("target");
-    
-    
-    PointCloudColorHandlerGenericField<PointNormalT> tgt_color_handler (cloud_target, "curvature");
-    if (!tgt_color_handler.isCapable ())
-        PCL_WARN ("Cannot create curvature color handler!");
-    
-    PointCloudColorHandlerGenericField<PointNormalT> src_color_handler (cloud_source, "curvature");
-    if (!src_color_handler.isCapable ())
-        PCL_WARN ("Cannot create curvature color handler!");
-    
-    
-    p->addPointCloud (cloud_target, tgt_color_handler, "target", vp_2);
-    p->addPointCloud (cloud_source, src_color_handler, "source", vp_2);
-    
-    p->spinOnce();
-}
+//void showCloudsRight(const PointCloudWithNormals::Ptr cloud_target, const PointCloudWithNormals::Ptr cloud_source)
+//{
+//    p->removePointCloud ("source");
+//    p->removePointCloud ("target");
+//    
+//    
+//    PointCloudColorHandlerGenericField<PointNormalT> tgt_color_handler (cloud_target, "curvature");
+//    if (!tgt_color_handler.isCapable ())
+//        PCL_WARN ("Cannot create curvature color handler!");
+//    
+//    PointCloudColorHandlerGenericField<PointNormalT> src_color_handler (cloud_source, "curvature");
+//    if (!src_color_handler.isCapable ())
+//        PCL_WARN ("Cannot create curvature color handler!");
+//    
+//    
+//    p->addPointCloud (cloud_target, tgt_color_handler, "target", vp_2);
+//    p->addPointCloud (cloud_source, src_color_handler, "source", vp_2);
+//    
+//    p->spinOnce();
+//}
 
 ////////////////////////////////////////////////////////////////////////////////
 /** \brief Load a set of PCD files that we want to register together
@@ -165,31 +167,54 @@ void showCloudsRight(const PointCloudWithNormals::Ptr cloud_target, const PointC
  */
 void loadData (int argc, char **argv, std::vector<PCD, Eigen::aligned_allocator<PCD> > &models)
 {
-    std::string extension (".pcd");
+
     // Suppose the first argument is the actual test model
-    for (int i = 1; i < argc; i++)
-    {
-        std::string fname = std::string (argv[i]);
-        // Needs to be at least 5: .plot
-        if (fname.size () <= extension.size ())
-            continue;
+    assert(argc == 2);
+    std::string filecount = std::string (argv[1]);
+    int nfilecount = atoi(filecount.c_str());
+
+
+    for (int i = 1; i <= nfilecount; i++) {
+        std::stringstream ss;
+        ss << i;
+        std::string fName = ss.str() + ".pcd";
+
         
-        std::transform (fname.begin (), fname.end (), fname.begin (), (int(*)(int))tolower);
+        // Load the cloud and saves it into the global list of models
+        PCD m;
+        m.f_name = fName;
+        pcl::io::loadPCDFile (fName, *m.cloud);
+        //remove NAN points from the cloud
+        std::vector<int> indices;
+        pcl::removeNaNFromPointCloud(*m.cloud,*m.cloud, indices);
         
-        //check that the argument is a pcd file
-        if (fname.compare (fname.size () - extension.size (), extension.size (), extension) == 0)
-        {
-            // Load the cloud and saves it into the global list of models
-            PCD m;
-            m.f_name = argv[i];
-            pcl::io::loadPCDFile (argv[i], *m.cloud);
-            //remove NAN points from the cloud
-            std::vector<int> indices;
-            pcl::removeNaNFromPointCloud(*m.cloud,*m.cloud, indices);
-            
-            models.push_back (m);
-        }
+        models.push_back (m);
     }
+    
+//    std::string extension (".pcd");
+//    for (int i = 1; i < argc; i++)
+//    {
+//        std::string fname = std::string (argv[i]);
+//        // Needs to be at least 5: .plot
+//        if (fname.size () <= extension.size ())
+//            continue;
+//        
+//        std::transform (fname.begin (), fname.end (), fname.begin (), (int(*)(int))tolower);
+//        
+//        //check that the argument is a pcd file
+//        if (fname.compare (fname.size () - extension.size (), extension.size (), extension) == 0)
+//        {
+//            // Load the cloud and saves it into the global list of models
+//            PCD m;
+//            m.f_name = argv[i];
+//            pcl::io::loadPCDFile (argv[i], *m.cloud);
+//            //remove NAN points from the cloud
+//            std::vector<int> indices;
+//            pcl::removeNaNFromPointCloud(*m.cloud,*m.cloud, indices);
+//            
+//            models.push_back (m);
+//        }
+//    }
 }
 
 
@@ -291,7 +316,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
         prev = reg.getLastIncrementalTransformation ();
         
         // visualize current state
-        showCloudsRight(points_with_normals_tgt, points_with_normals_src);
+        //showCloudsRight(points_with_normals_tgt, points_with_normals_src);
     }
     
     //
@@ -302,19 +327,19 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
     // Transform target back in source frame
     pcl::transformPointCloud (*cloud_tgt, *output, targetToSource);
     
-    p->removePointCloud ("source");
-    p->removePointCloud ("target");
-    
-    PointCloudColorHandlerCustom<PointT> cloud_tgt_h (output, 0, 255, 0);
-    PointCloudColorHandlerCustom<PointT> cloud_src_h (cloud_src, 255, 0, 0);
-    p->addPointCloud (output, cloud_tgt_h, "target", vp_2);
-    p->addPointCloud (cloud_src, cloud_src_h, "source", vp_2);
-    
-    //PCL_INFO ("Press q to continue the registration.\n");
-    p->spinOnce(2000, true);
-    
-    p->removePointCloud ("source");
-    p->removePointCloud ("target");
+//    p->removePointCloud ("source");
+//    p->removePointCloud ("target");
+//    
+//    PointCloudColorHandlerCustom<PointT> cloud_tgt_h (output, 0, 255, 0);
+//    PointCloudColorHandlerCustom<PointT> cloud_src_h (cloud_src, 255, 0, 0);
+//    p->addPointCloud (output, cloud_tgt_h, "target", vp_2);
+//    p->addPointCloud (cloud_src, cloud_src_h, "source", vp_2);
+//    
+//    //PCL_INFO ("Press q to continue the registration.\n");
+//    p->spinOnce(2000, true);
+//    
+//    p->removePointCloud ("source");
+//    p->removePointCloud ("target");
     
     //add the source to the transformed target
     *output += *cloud_src;
@@ -340,20 +365,37 @@ int main (int argc, char** argv)
     PCL_INFO ("Loaded %d datasets.", (int)data.size ());
     
     // Create a PCLVisualizer object
-    p = new pcl::visualization::PCLVisualizer (argc, argv, "Pairwise Incremental Registration example");
-    p->createViewPort (0.0, 0, 0.5, 1.0, vp_1);
-    p->createViewPort (0.5, 0, 1.0, 1.0, vp_2);
+//    p = new pcl::visualization::PCLVisualizer (argc, argv, "Pairwise Incremental Registration example");
+//    p->createViewPort (0.0, 0, 0.5, 1.0, vp_1);
+//    p->createViewPort (0.5, 0, 1.0, 1.0, vp_2);
     
     PointCloud::Ptr result (new PointCloud), source, target;
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>);
+    
     Eigen::Matrix4f GlobalTransform = Eigen::Matrix4f::Identity (), pairTransform;
     
     for (size_t i = 1; i < data.size (); ++i)
     {
+        // 1
+        //      0 - 1
+        //      1 - 2
+        // 1
+        
+        // 2
+        //      1 - 2
+        //      2 - 3
+        // 2
+        
+        // 54
+        //      53  - 54
+        //      54 -  55
+        // 54
+        
         source = data[i-1].cloud;
         target = data[i].cloud;
         
         // Add visualization data
-        showCloudsLeft(source, target);
+        //showCloudsLeft(source, target);
         
         PointCloud::Ptr temp (new PointCloud);
         PCL_INFO ("Aligning %s (%d) with %s (%d).\n", data[i-1].f_name.c_str (), source->points.size (), data[i].f_name.c_str (), target->points.size ());
@@ -365,10 +407,19 @@ int main (int argc, char** argv)
         //update the global transform
         GlobalTransform = GlobalTransform * pairTransform;
         
+        
+        // http://www.pointclouds.org/documentation/tutorials/statistical_outlier.php#statistical-outlier-removal
+        // Create the filtering object
+        pcl::StatisticalOutlierRemoval<pcl::PointXYZ> sor;
+        sor.setInputCloud (result);
+        sor.setMeanK (50);
+        sor.setStddevMulThresh (1.0);
+        sor.filter (*cloud_filtered);
+        
         //save aligned pair, transformed into the first cloud's frame
         std::stringstream ss;
         ss << i << ".pcd";
-        pcl::io::savePCDFile (ss.str (), *result, true);
+        pcl::io::savePCDFile (ss.str (), *cloud_filtered, true);
         
     }
 }

@@ -9,14 +9,11 @@ cmake_install.cmake
 install_manifest.txt
 
 
-libroyale-1.0.5.40-APPLE-64Bit/samples/**/Debug/**
+**/Debug
+
+**/*.build
+
+**/*.xcodeproj
 
 
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.xcodeproj/project.xcworkspace/xcuserdata/zhuda.xcuserdatad/UserInterfaceState.xcuserstate
-
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.build/**
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.build/Debug/ZERO_CHECK.build/dgph
-
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.build/Debug/ZERO_CHECK.build/dgph
-
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.xcodeproj/**
+libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.build/Debug/sample2.build/dgph

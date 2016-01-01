@@ -281,7 +281,7 @@ main (int argc, char** argv)
   // -----Create example point cloud-----
   // ------------------------------------
   pcl::PointCloud<pcl::PointXYZ>::Ptr test_cloud_ptr (new pcl::PointCloud<pcl::PointXYZ>);
-  pcl::io::loadPCDFile ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/Debug/55.pcd", *test_cloud_ptr);
+  pcl::io::loadPCDFile ("/Users/zhuda/Desktop/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/moving-least-squares/Debug/resampled.pcd", *test_cloud_ptr);
   
   pcl::PointCloud<pcl::PointXYZ>::Ptr basic_cloud_ptr (new pcl::PointCloud<pcl::PointXYZ>);
   pcl::PointCloud<pcl::PointXYZRGB>::Ptr point_cloud_ptr (new pcl::PointCloud<pcl::PointXYZRGB>);
