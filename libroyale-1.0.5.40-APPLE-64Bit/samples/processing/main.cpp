@@ -54,9 +54,9 @@ main (int argc, char** argv)
     Resample(outputs);
     
     pcl::PointCloud<pcl::PointXYZ> output;
-    //PairWise(outputs);
+    //PairWise(outputs, output);
     IncrementalPairwise(outputs, output);
     
-    //Triangulation(output);
+    Triangulation(output);
 
 }

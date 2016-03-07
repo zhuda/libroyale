@@ -22,7 +22,7 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
     tree->setInputCloud (cloud);
     n.setInputCloud (cloud);
     n.setSearchMethod (tree);
-    n.setKSearch (20);
+    n.setKSearch (10);
     n.compute (*normals);
     
     
@@ -44,8 +44,8 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
     
     // Set typical values for the parameters
     gp3.setMu (2.5);
-    gp3.setMaximumNearestNeighbors (100);
-    gp3.setMaximumSurfaceAngle(M_PI/4); // 45 degrees
+    gp3.setMaximumNearestNeighbors (1000);
+    gp3.setMaximumSurfaceAngle(M_PI); // 180 degrees
     gp3.setMinimumAngle(M_PI/18); // 10 degrees
     gp3.setMaximumAngle(2*M_PI/3); // 120 degrees
     gp3.setNormalConsistency(false);
@@ -60,7 +60,8 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
     std::vector<int> states = gp3.getPointStates();
     
 
-    pcl::io::savePLYFile("/Users/zhuda/Desktop/back/0010.ply", triangles);
+    pcl::io::savePLYFile("/Users/zhuda/Desktop/back/high_resolution0001+0023.ply", triangles);
+    pcl::io::saveVTKFile("/Users/zhuda/Desktop/back/high_resolution0001+0023.vtk", triangles);
 
 }
 

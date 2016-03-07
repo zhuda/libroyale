@@ -117,7 +117,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
     pcl::NormalEstimation<PointT, PointNormalT> norm_est;
     pcl::search::KdTree<pcl::PointXYZ>::Ptr tree (new pcl::search::KdTree<pcl::PointXYZ> ());
     norm_est.setSearchMethod (tree);
-    norm_est.setKSearch (30);
+    norm_est.setKSearch (10);
     
     norm_est.setInputCloud (src);
     norm_est.compute (*points_with_normals_src);
@@ -140,7 +140,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
     reg.setTransformationEpsilon (1e-6);
     // Set the maximum distance between two correspondences (src<->tgt) to 10cm
     // Note: adjust this based on the size of your datasets
-    reg.setMaxCorrespondenceDistance (0.1);
+    reg.setMaxCorrespondenceDistance (0.001);
     // Set the point representation
     reg.setPointRepresentation (boost::make_shared<const MyPointRepresentation> (point_representation));
     
@@ -191,7 +191,7 @@ void pairAlign (const PointCloud::Ptr cloud_src, const PointCloud::Ptr cloud_tgt
 }
 
 
-void PairWise (std::vector<pcl::PointCloud<pcl::PointXYZ> > & inputs)
+void PairWise (std::vector<pcl::PointCloud<pcl::PointXYZ> > & inputs, pcl::PointCloud<pcl::PointXYZ>& output)
 {
     // Create a PCLVisualizer object
     
@@ -221,13 +221,15 @@ void PairWise (std::vector<pcl::PointCloud<pcl::PointXYZ> > & inputs)
         target.reset(new PointCloud(*result));
     }
     
+    output = *target;
+    
     //save aligned pair, transformed into the first cloud's frame
     //    std::stringstream ss;
     //    ss << datafolder << "/" << "pairwised.pcd";
     //    pcl::io::savePCDFile (ss.str (), *result, false);
     
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-    viewer = simpleVis(result);
+    viewer = simpleVis(target);
     while (!viewer->wasStopped ())
     {
         viewer->spinOnce (100);
@@ -240,6 +242,7 @@ void IncrementalPairwise(const std::vector<pcl::PointCloud<pcl::PointXYZ> > & in
     pcl::IterativeClosestPoint<pcl::PointXYZ,pcl::PointXYZ>::Ptr icp (new pcl::IterativeClosestPoint<pcl::PointXYZ,pcl::PointXYZ>);
     icp->setMaxCorrespondenceDistance (0.05);
     icp->setMaximumIterations (50);
+    icp->setInputTarget(boost::make_shared<const pcl::PointCloud<pcl::PointXYZ> >(inputs[0]));
     
     pcl::registration::IncrementalICP<pcl::PointXYZ> iicp;
     iicp.setICP (icp);
@@ -247,7 +250,7 @@ void IncrementalPairwise(const std::vector<pcl::PointCloud<pcl::PointXYZ> > & in
     PointCloud::Ptr target;
     target.reset(new PointCloud(inputs[0]));
     
-    for (size_t i = 1; i < inputs.size(); ++i)
+    for (size_t i = 0; i < inputs.size(); ++i)
     {
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ>(inputs[i]));
         
@@ -266,13 +269,13 @@ void IncrementalPairwise(const std::vector<pcl::PointCloud<pcl::PointXYZ> > & in
 //    ss << datafolder << "/" << "pairwised.pcd";
 //    pcl::io::savePCDFile (ss.str (), *target, false);
 //    
-    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-    viewer = simpleVis(target);
-    while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce (100);
-        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-    }
+//    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+//    viewer = simpleVis(target);
+//    while (!viewer->wasStopped ())
+//    {
+//        viewer->spinOnce (100);
+//        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+//    }
 }
 
 #endif /* end of include guard: _PAIRWISE_H */
