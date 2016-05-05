@@ -89,17 +89,20 @@ void voxelGrid_filter(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,
     pcl::VoxelGrid<pcl::PointXYZ> vg;
     pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_filtered (new pcl::PointCloud<pcl::PointXYZ>);
     vg.setInputCloud (cloud);
-    vg.setLeafSize (0.0025f, 0.0025f, 0.0025f);
+    //vg.setLeafSize (0.0025f, 0.0025f, 0.0025f); // GOOD BUT REPORT WARINGS
+    vg.setLeafSize (0.003f, 0.003f, 0.003f); // The value would affect the final model's precision, higher value will lead the model be corase.
+    
     vg.filter (*output);
     std::cout << "PointCloud after voxelGrid_filter has: " << output->points.size ()  << " data points." << std::endl;
     
-    //    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-    //    viewer = simpleVis(output);
-    //    while (!viewer->wasStopped ())
-    //    {
-    //        viewer->spinOnce (100);
-    //        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-    //    }
+//    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+//    viewer = simpleVis(output);
+//    while (!viewer->wasStopped ())
+//    {
+//        viewer->spinOnce (3000);
+//        viewer->close();
+//        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+//    }
 }
 
 void Filter(const std::vector<std::string>& data_files, std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
@@ -112,13 +115,16 @@ void Filter(const std::vector<std::string>& data_files, std::vector<pcl::PointCl
         // Load bun0.pcd -- should be available with the PCL archive in test
         pcl::io::loadPCDFile (file.c_str(), *cloud);
 
-//        std::cout << "before filter : " << std::endl;
+//        if (i == 2)
+//        {
+//        std::cout << "0001.pcd before filter : " << std::endl;
 //        boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
 //        viewer = simpleVis(cloud);
 //        while (!viewer->wasStopped ())
 //        {
 //            viewer->spinOnce (100);
 //            boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+//        }
 //        }
         
         std::cout << "Start to filter : " << file.c_str() << std::endl;

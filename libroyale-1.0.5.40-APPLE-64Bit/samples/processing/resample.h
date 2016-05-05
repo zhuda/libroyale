@@ -30,22 +30,23 @@ void Resample(std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
         mls.setInputCloud (cloud);
         mls.setPolynomialFit (true);
         mls.setSearchMethod (tree);
-        mls.setSearchRadius (0.005);
+        mls.setSearchRadius (0.005); // lower value can help remove far away points.
         
         // Reconstruct
         mls.process (mls_points);
         
         outputs[i] = mls_points;
         
-//        std::cout << "after resample" << std::endl;
-//        boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-//        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_resample (new pcl::PointCloud<pcl::PointXYZ> (mls_points));
-//        viewer = simpleVis(cloud_resample);
-//        while (!viewer->wasStopped ())
-//        {
-//            viewer->spinOnce (100);
-//            boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-//        }
+        std::cout << "After resample data index/total: " << i << "/" << size << std::endl;
+        boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_resample (new pcl::PointCloud<pcl::PointXYZ> (outputs[i]));
+        viewer = simpleVis(cloud_resample);
+        while (!viewer->wasStopped ())
+        {
+            viewer->spinOnce (3000);
+            viewer->close();
+            boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+        }
     }
 }
 

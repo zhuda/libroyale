@@ -16,7 +16,11 @@ install_manifest.txt
 **/*.xcodeproj
 
 
-libroyale-1.0.5.40-APPLE-64Bit/samples/sample2/sample2.build/Debug/sample2.build/dgph
-
 *.pcd
 
+
+libroyale-1.0.5.40-APPLE-64Bit/samples/data_*/**
+
+libroyale-1.0.5.40-APPLE-64Bit/samples/scanner/Release/**
+
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/Release/**

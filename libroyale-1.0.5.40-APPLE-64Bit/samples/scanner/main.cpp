@@ -148,7 +148,7 @@ int main()
     cameraDevice->startCapture();
 
     // let the camera capture for some time
-    std::this_thread::sleep_for (std::chrono::seconds (10));
+    std::this_thread::sleep_for (std::chrono::seconds (60));
 
     // stop capture mode
     cameraDevice->stopCapture();

@@ -29,7 +29,7 @@ main (int argc, char *argv[])
   // }
   //pcd_file = argv[1];
   //file_3dm = argv[2];
-  pcd_file = "/Users/zhuda/Desktop/github/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/data/pairwised.pcd";
+  pcd_file = "/Users/zhuda/Desktop/github/CamBoard_pico_flexx/libroyale/libroyale-1.0.5.40-APPLE-64Bit/samples/data/0003.pcd";
   file_3dm = "resampled.3dm";
   pcl::visualization::PCLVisualizer viewer ("B-spline surface fitting");
   viewer.setSize (800, 600);
