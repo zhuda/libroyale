@@ -11,7 +11,7 @@
 #include <pcl/io/vtk_io.h>
 #include <pcl/io/ply_io.h>
 
-void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
+void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output, const string& outputfolder)
 {
     std::cerr << "Triangulation starts :" << std::endl;
     
@@ -61,8 +61,8 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
     std::vector<int> parts = gp3.getPartIDs();
     std::vector<int> states = gp3.getPointStates();
     
-    pcl::io::savePLYFile(datafolder+"/final.ply", triangles);
-    pcl::io::saveVTKFile(datafolder+"/final.vtk", triangles);
+    pcl::io::savePLYFile(outputfolder+"/final.ply", triangles);
+    pcl::io::saveVTKFile(outputfolder+"/final.vtk", triangles);
 
 }
 

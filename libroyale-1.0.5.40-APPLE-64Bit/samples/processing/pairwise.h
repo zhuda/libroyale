@@ -240,8 +240,8 @@ void PairWise (std::vector<pcl::PointCloud<pcl::PointXYZ> > & inputs, pcl::Point
 void IncrementalPairwise(const std::vector<pcl::PointCloud<pcl::PointXYZ> > & inputs, pcl::PointCloud<pcl::PointXYZ>& output)
 {
     pcl::IterativeClosestPoint<pcl::PointXYZ,pcl::PointXYZ>::Ptr icp (new pcl::IterativeClosestPoint<pcl::PointXYZ,pcl::PointXYZ>);
-    icp->setMaxCorrespondenceDistance (0.1);
-    icp->setMaximumIterations (50);
+    icp->setMaxCorrespondenceDistance (0.05);
+    icp->setMaximumIterations (10);
     icp->setInputTarget(boost::make_shared<const pcl::PointCloud<pcl::PointXYZ> >(inputs[0]));
     
     pcl::registration::IncrementalICP<pcl::PointXYZ> iicp;

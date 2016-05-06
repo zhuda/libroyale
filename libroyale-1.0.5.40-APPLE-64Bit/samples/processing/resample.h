@@ -37,13 +37,13 @@ void Resample(std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
         
         outputs[i] = mls_points;
         
-        std::cout << "After resample data index/total: " << i << "/" << size << std::endl;
+        std::cout << "After resample data index/total: " << i + 1 << "/" << size << std::endl;
         boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_resample (new pcl::PointCloud<pcl::PointXYZ> (outputs[i]));
         viewer = simpleVis(cloud_resample);
         while (!viewer->wasStopped ())
         {
-            viewer->spinOnce (3000);
+            viewer->spinOnce (5000);
             viewer->close();
             boost::this_thread::sleep (boost::posix_time::microseconds (100000));
         }

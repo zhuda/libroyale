@@ -95,50 +95,34 @@ void voxelGrid_filter(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,
     vg.filter (*output);
     std::cout << "PointCloud after voxelGrid_filter has: " << output->points.size ()  << " data points." << std::endl;
     
-//    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-//    viewer = simpleVis(output);
-//    while (!viewer->wasStopped ())
-//    {
-//        viewer->spinOnce (3000);
-//        viewer->close();
-//        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-//    }
+    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+    viewer = simpleVis(output);
+    while (!viewer->wasStopped ())
+    {
+        viewer->spinOnce (5000);
+        viewer->close();
+        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+    }
 }
 
-void Filter(const std::vector<std::string>& data_files, std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
+void Filter(std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
 {
-    for(size_t i = 0; i < data_files.size(); i ++)
+    size_t size = outputs.size();
+    for(size_t i = 0; i < size; i ++)
     {
-        string file = data_files[i];
-        // Load input file into a PointCloud<T> with an appropriate type
-        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud (new pcl::PointCloud<pcl::PointXYZ> ());
-        // Load bun0.pcd -- should be available with the PCL archive in test
-        pcl::io::loadPCDFile (file.c_str(), *cloud);
-
-//        if (i == 2)
-//        {
-//        std::cout << "0001.pcd before filter : " << std::endl;
-//        boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-//        viewer = simpleVis(cloud);
-//        while (!viewer->wasStopped ())
-//        {
-//            viewer->spinOnce (100);
-//            boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-//        }
-//        }
-        
-        std::cout << "Start to filter : " << file.c_str() << std::endl;
+        std::cout << "Start to filter : " << i + 1 << "/" << size << std::endl;
         
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_remove_outerliner (new pcl::PointCloud<pcl::PointXYZ> ());
         
         // remove outerliner
-        statistica_outlier_removal(cloud, cloud_remove_outerliner);
+        pcl::PointCloud<pcl::PointXYZ>::Ptr input_cloud(new pcl::PointCloud<pcl::PointXYZ> (outputs[i]));
+        statistica_outlier_removal(input_cloud, cloud_remove_outerliner);
         
         // downsample
         pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsample (new pcl::PointCloud<pcl::PointXYZ> ());
         voxelGrid_filter(cloud_remove_outerliner, cloud_downsample);
         
-        outputs.push_back(*cloud_downsample);
+        outputs[i] = *cloud_downsample;
     }
 }
 

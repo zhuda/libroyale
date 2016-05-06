@@ -36,6 +36,8 @@ class MyListener : public IDepthDataListener
         
         for (size_t i = 0; i < data->points.size(); ++i)
         {
+            // TODO filter those zero points.
+            
             if(data->points[i].depthConfidence != 0)
             {
                 cloud.points[i].x = data->points[i].x;
