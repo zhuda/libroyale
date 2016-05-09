@@ -29,8 +29,8 @@ void LoadData(const std::vector<string>& data_files, std::vector<pcl::PointCloud
 //        // Ignore index 1, 3, 5, 7...
 //        if ( i % 2 != 0)
 //            continue;
-        if (i % 4 != 0)
-            continue;
+//        if (i % 4 != 0)
+//            continue;
         
         string file = data_files[i];
         // Load input file into a PointCloud<T> with an appropriate type
@@ -85,12 +85,19 @@ void TwoStepProcessing()
         
         LoadData(data_files, outputs);
         
-        Filter(outputs);
-        
-        Resample(outputs);
+        size_t datasize = outputs.size();
+        for(size_t j = 0; j < datasize; j ++)
+        {
+            pcl::PointCloud<pcl::PointXYZ>& singleFrameData = outputs[j];
+            
+            std::cout << "Start to filter : " << j + 1 << "/" << datasize << std::endl;
+            Filter(singleFrameData);
+            
+            std::cout << "Start resample data index/total: " << j + 1 << "/" << datasize << std::endl;
+            Resample(singleFrameData);
+        }
         
         pcl::PointCloud<pcl::PointXYZ> output;
-        //PairWise(outputs, output);
         IncrementalPairwise(outputs, output);
         
         char t[32];
@@ -128,13 +135,21 @@ void TwoStepProcessing()
     
     LoadData(data_files, outputs2);
     
-    Filter(outputs2);
-    
-    Resample(outputs2);
+    size_t datasize = outputs2.size();
+    for(size_t j = 0; j < datasize; j ++)
+    {
+        pcl::PointCloud<pcl::PointXYZ>& singleFrameData = outputs2[j];
+        
+        std::cout << "Start to filter : " << j + 1 << "/" << datasize << std::endl;
+        Filter(singleFrameData);
+        
+        std::cout << "Start resample data index/total: " << j + 1 << "/" << datasize << std::endl;
+        Resample(singleFrameData);
+    }
     
     pcl::PointCloud<pcl::PointXYZ> output2;
-    //PairWise(outputs, output);
     IncrementalPairwise(outputs2, output2);
+    
     Triangulation(output2, datafolder2);
 }
 
@@ -165,12 +180,22 @@ void OneStepProcessing()
     
     LoadData(data_files, outputs);
     
-    Filter(outputs);
+    size_t size = outputs.size();
+    for(size_t i = 0; i < size; i ++)
+    {
+        pcl::PointCloud<pcl::PointXYZ>& singleFrameData = outputs[i];
+        
+        std::cout << "Start to filter : " << i + 1 << "/" << size << std::endl;
+        Filter(singleFrameData);
+        
+        std::cout << "Start resample data index/total: " << i + 1 << "/" << size << std::endl;
+        Resample(singleFrameData);
+    }
     
-    Resample(outputs);
     
     pcl::PointCloud<pcl::PointXYZ> output;
     IncrementalPairwise(outputs, output);
+    
     
     Triangulation(output, datafolder);
 }

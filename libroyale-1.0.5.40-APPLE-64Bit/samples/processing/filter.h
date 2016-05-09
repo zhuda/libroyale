@@ -95,35 +95,29 @@ void voxelGrid_filter(const pcl::PointCloud<pcl::PointXYZ>::Ptr& cloud,
     vg.filter (*output);
     std::cout << "PointCloud after voxelGrid_filter has: " << output->points.size ()  << " data points." << std::endl;
     
-    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-    viewer = simpleVis(output);
-    while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce (5000);
-        viewer->close();
-        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
-    }
+//    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
+//    viewer = simpleVis(output);
+//    while (!viewer->wasStopped ())
+//    {
+//        viewer->spinOnce (2000);
+//        viewer->close();
+//        boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+//    }
 }
 
-void Filter(std::vector<pcl::PointCloud<pcl::PointXYZ> > & outputs)
+void Filter(pcl::PointCloud<pcl::PointXYZ>& singleFrameData)
 {
-    size_t size = outputs.size();
-    for(size_t i = 0; i < size; i ++)
-    {
-        std::cout << "Start to filter : " << i + 1 << "/" << size << std::endl;
-        
-        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_remove_outerliner (new pcl::PointCloud<pcl::PointXYZ> ());
-        
-        // remove outerliner
-        pcl::PointCloud<pcl::PointXYZ>::Ptr input_cloud(new pcl::PointCloud<pcl::PointXYZ> (outputs[i]));
-        statistica_outlier_removal(input_cloud, cloud_remove_outerliner);
-        
-        // downsample
-        pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsample (new pcl::PointCloud<pcl::PointXYZ> ());
-        voxelGrid_filter(cloud_remove_outerliner, cloud_downsample);
-        
-        outputs[i] = *cloud_downsample;
-    }
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_remove_outerliner (new pcl::PointCloud<pcl::PointXYZ> ());
+    
+    // remove outerliner
+    pcl::PointCloud<pcl::PointXYZ>::Ptr input_cloud(new pcl::PointCloud<pcl::PointXYZ> (singleFrameData));
+    statistica_outlier_removal(input_cloud, cloud_remove_outerliner);
+    
+    // downsample
+    pcl::PointCloud<pcl::PointXYZ>::Ptr cloud_downsample (new pcl::PointCloud<pcl::PointXYZ> ());
+    voxelGrid_filter(cloud_remove_outerliner, cloud_downsample);
+    
+    singleFrameData = *cloud_downsample;
 }
 
 
