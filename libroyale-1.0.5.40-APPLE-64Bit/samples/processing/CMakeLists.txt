@@ -10,8 +10,12 @@ add_definitions(${PCL_DEFINITIONS})
 
 add_executable (processing main.cpp
 filter.h
+filter.cpp
 resample.h
+resample.cpp
 pairwise.h
+pairwise.cpp
 constant.h
-triangulation.h)
+triangulation.h
+Timer.h)
 target_link_libraries (processing ${PCL_LIBRARIES})

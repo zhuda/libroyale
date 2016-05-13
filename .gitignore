@@ -26,3 +26,20 @@ libroyale-1.0.5.40-APPLE-64Bit/samples/scanner/Release/**
 libroyale-1.0.5.40-APPLE-64Bit/samples/processing/Release/**
 
 libroyale-1.0.5.40-APPLE-64Bit/samples/data/**
+*.vcxproj
+*.filters
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/ALL_BUILD.vcxproj.user
+*.opensdf
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/processing.sdf
+*.tlog
+*.obj
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/processing.vcxproj.user
+*.ipch
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/processing.dir/Release/processing.exe.intermediate.manifest
+*.sln
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/processing.suo
+*.log
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/processing.dir/Release/processing.lastbuildstate
+*.cache
+libroyale-1.0.5.40-APPLE-64Bit/samples/processing/Win32/Release/ZERO_CHECK/ZERO_CHECK.lastbuildstate
+*.user

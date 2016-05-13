@@ -11,8 +11,10 @@
 #include <pcl/io/vtk_io.h>
 #include <pcl/io/ply_io.h>
 
-void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output, const string& outputfolder)
+void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
 {
+	Timer t;
+	t.StartCounter();
     std::cerr << "Triangulation starts :" << std::endl;
     
     // Load input file into a PointCloud<T> with an appropriate type
@@ -24,7 +26,7 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output, const string& 
     tree->setInputCloud (cloud);
     n.setInputCloud (cloud);
     n.setSearchMethod (tree);
-    n.setKSearch (10);
+    n.setKSearch (50);
     n.compute (*normals);
     
     
@@ -32,22 +34,26 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output, const string& 
     pcl::PointCloud<pcl::PointNormal>::Ptr cloud_with_normals (new pcl::PointCloud<pcl::PointNormal>);
     pcl::concatenateFields (*cloud, *normals, *cloud_with_normals);
     //* cloud_with_normals = cloud + normals
+
+	//pcl::io::savePLYFile("E:/PCL/data/final_after_computing_normal.ply", *cloud_with_normals);
+	//std::cout << "ply final_after_computing_normal finished..." << std::endl;
     
     // Create search tree*
     pcl::search::KdTree<pcl::PointNormal>::Ptr tree2 (new pcl::search::KdTree<pcl::PointNormal>);
     tree2->setInputCloud (cloud_with_normals);
-    
+
+   
     // Initialize objects
     pcl::GreedyProjectionTriangulation<pcl::PointNormal> gp3;
     pcl::PolygonMesh triangles;
     
     // Set the maximum distance between connected points (maximum edge length)
-    gp3.setSearchRadius (0.25);
+    gp3.setSearchRadius (0.1);
     
     // Set typical values for the parameters
     gp3.setMu (2.5);
     gp3.setMaximumNearestNeighbors (5000); // 4000 won't work
-    gp3.setMaximumSurfaceAngle(M_PI); // 180 degrees
+    gp3.setMaximumSurfaceAngle(M_PI/2); // 180 degrees
     gp3.setMinimumAngle(M_PI/18); // 10 degrees
     gp3.setMaximumAngle(2*M_PI/3); // 120 degrees
     gp3.setNormalConsistency(false);
@@ -56,13 +62,16 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output, const string& 
     gp3.setInputCloud (cloud_with_normals);
     gp3.setSearchMethod (tree2);
     gp3.reconstruct (triangles);
+
+	std::cerr << "Triangulation finished!!!" << std::endl;
+	std::cout << "Triangle takes " << t.GetCounter() /1000 << std::endl;
     
     // Additional vertex information
     std::vector<int> parts = gp3.getPartIDs();
     std::vector<int> states = gp3.getPointStates();
     
-    pcl::io::savePLYFile(outputfolder+"/final.ply", triangles);
-    pcl::io::saveVTKFile(outputfolder+"/final.vtk", triangles);
+    pcl::io::savePLYFile("E:/PCL/data/final.ply", triangles);
+    pcl::io::saveVTKFile("E:/PCL/data/final.vtk", triangles);
 
 }
 
