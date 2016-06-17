@@ -48,5 +48,24 @@ void Lum(const std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr > & inputs, pcl::
 
 void ELCH(const std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr > & inputs, pcl::PointCloud<pcl::PointXYZ>& output,  const Eigen::Matrix4f &loop_transform);
 
+void PreAlignmentAllFrames(const std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr > & inputs,
+                           pcl::PointCloud<pcl::PointXYZ>& output);
+
+Eigen::Matrix4f PreAlignment(const pcl::PointCloud<pcl::PointXYZ>::Ptr & cloud_target,
+                              const pcl::PointCloud<pcl::PointXYZ>::Ptr & cloud_source,
+                  int    *icp_converged,
+                  double *icp_score,
+                             pcl::PointCloud<pcl::PointXYZ> & icp_registration_output,
+                  int full_registration = 0,
+                  float  sac_ia_min_sample_distance = 0,    // 0
+                  float  sac_ia_max_correspondence_distance = std::sqrt (std::numeric_limits<double>::max ()),    // max
+                  int    sac_ia_maximum_iterations = 10, // 10
+                  double icp_RANSAC_threshold = 0.1,
+                  int    icp_maxICP_iterations = 10,
+                  double icp_maxCorrespondence_distance = std::sqrt (std::numeric_limits<double>::max ()),
+                  double icp_EuclideanFitness_epsilon = -std::numeric_limits<double>::max (),
+                  double icp_Transformation_epsilon = 0.0,
+                  double normals_radius = 0.05,
+                  double fpfh_radius = 0.1);
 
 #endif /* end of include guard: _PAIRWISE_H */

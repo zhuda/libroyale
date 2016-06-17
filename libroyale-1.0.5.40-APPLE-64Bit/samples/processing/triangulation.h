@@ -70,8 +70,8 @@ void Triangulation(const pcl::PointCloud<pcl::PointXYZ> & output)
     std::vector<int> parts = gp3.getPartIDs();
     std::vector<int> states = gp3.getPointStates();
     
-    pcl::io::savePLYFile("E:/PCL/data/final.ply", triangles);
-    pcl::io::saveVTKFile("E:/PCL/data/final.vtk", triangles);
+    pcl::io::savePLYFile(outputfolder+ "/final.ply", triangles);
+    pcl::io::saveVTKFile(outputfolder+ "/final.vtk", triangles);
 
 }
 

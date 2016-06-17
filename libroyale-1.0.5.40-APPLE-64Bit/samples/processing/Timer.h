@@ -1,3 +1,5 @@
+#if defined (_WIN32) || defined (_WIN64)
+
 #include <windows.h>
 
 #include <iostream>
@@ -29,3 +31,25 @@ public:
 
 //double Timer::PCFreq = 0.0;
 //__int64 Timer::CounterStart = 0;
+#else
+
+class Timer
+{
+public:
+    void StartCounter()
+    {
+        t0 = Clock::now();
+    }
+    double GetCounter()
+    {
+        Clock::time_point t1 = Clock::now();
+        milliseconds ms = std::chrono::duration_cast<milliseconds>(t1 - t0);
+
+        return ms.count();
+    }
+private:
+    typedef std::chrono::high_resolution_clock Clock;
+    typedef std::chrono::milliseconds milliseconds;
+    Clock::time_point t0;
+};
+#endif

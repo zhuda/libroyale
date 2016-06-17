@@ -71,7 +71,7 @@ void LoadData(const std::vector<string>& data_files, std::vector<pcl::PointCloud
 {
     for(size_t i = 0; i < data_files.size(); i ++)
     {
-        //if (i % 20 != 0)
+        //if (i % 4 != 0)
         //   continue;
         
         string file = data_files[i];
@@ -161,34 +161,38 @@ void OneStepProcessing()
     pcl::PointCloud<pcl::PointXYZ> pairwise_output;
 	std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> outputs2;
 	Eigen::Matrix4f loop_transform;
-    IncrementalPairwise(outputs, pairwise_output, outputs2,loop_transform);
-	
-	pcl::PointCloud<pcl::PointXYZ> output;
+    //IncrementalPairwise(outputs, pairwise_output, outputs2,loop_transform);
+
+    PreAlignmentAllFrames(outputs, pairwise_output);
+    
+    pcl::io::savePCDFile(outputfolder + "/final.pcd", pairwise_output, false);
+    
+	//pcl::PointCloud<pcl::PointXYZ> output;
 	//ELCH(outputs2, output, loop_transform);
-	Lum(outputs2, output);
+	//Lum(outputs2, output);
 
 
 	std::cout << "refilter and resample...." << std::endl;
-	std::cout << "original data size ..." << output.size() << std::endl;
+	std::cout << "original data size ..." << pairwise_output.size() << std::endl;
 
 	std::vector<pcl::PointCloud<pcl::PointXYZ>::Ptr> temp;
-	pcl::PointCloud<pcl::PointXYZ>::Ptr element (new pcl::PointCloud<pcl::PointXYZ>(output));
-	temp.push_back(element);
-	Filter(temp);    
-    Resample(temp);
+	pcl::PointCloud<pcl::PointXYZ>::Ptr element (new pcl::PointCloud<pcl::PointXYZ>(pairwise_output));
+//	temp.push_back(element);
+//	Filter(temp);    
+//    Resample(temp);
 
 	//pcl::io::savePCDFile(datafolder+"\\sub.pcd", *(temp[0]));
 
 	boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer;
-	viewer = simpleVis(temp[0]);
+	viewer = simpleVis(/*temp[0]*/ element);
 	while (!viewer->wasStopped ())
 	{
-	    viewer->spinOnce (50000);
+	    viewer->spinOnce (6000000);
 	    viewer->close();
-	    boost::this_thread::sleep (boost::posix_time::microseconds (100000));
+	    boost::this_thread::sleep (boost::posix_time::microseconds (10000000));
 	}
 
-    Triangulation(*(temp[0]));
+    Triangulation(/* *(temp[0])*/ *element);
 }
 
 
